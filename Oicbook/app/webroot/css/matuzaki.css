@@ -1,0 +1,258 @@
+
+#wrapper {
+	margin: 0 auto;
+}
+
+#header{
+	z-index: 1;
+	background-image: url("../img/header2.png");
+	height: 94px;
+}
+
+
+#header header {
+	margin: 0 auto;
+}
+
+#logo{
+	float:left;
+}
+#headimg{
+	text-align: center;
+    padding: 20px;
+    border: none;
+}
+
+#headimg img{
+	position: relative;
+	width: 100%;
+	height: 306px;
+	box-shadow: 0 2px 5px 1px rgba(0,0,0,0.4);}
+
+ul,li	{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+.breadcrumb li {
+    margin-left: -20px;
+}
+
+.headernav li{
+	float: right;
+	text-align: center;
+	display: block;
+	width: 90px;
+	font-size: 20%;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #FFF;
+	text-shadow: 1px 1px 3px #000;
+}
+
+/*検索ボックスの画像*/
+#search_action{
+  outline: none;
+  display: inline-block;
+  position: relative;
+  background-image: url(../img/serchword.png); 
+  background-repeat: no-repeat;
+  border: 0;
+  height: 78px; /* 高さ40px */
+  width: 684px;
+  left: 11%;
+}
+
+#search_text{
+	background-color: transparent;
+	border: 0;
+	top: 28px;
+	left: 10px;
+	position: absolute;
+	width:580px;
+	outline: none;
+}
+#search_button{
+	position: absolute;
+	width:40px;
+	left: 610px;
+	top: 20px;
+	outline: none;
+}
+#cart{
+	position: relative;
+	display: inline;
+	left: 23%;;;
+}
+#cartHOW{
+	padding-left: 250px;
+}
+#cartHOW a{
+	margin-left: 700px;
+	
+}
+
+#main {
+	overflow: hidden;
+	margin: 0 auto;
+	min-height: 500px;
+	background-color: #C8F7C5;;/*サンプル用に高さ設定してあります。*/			/* Safari,Google Chrome用 */
+	border-style: solid;
+	border-color: #81CA77;
+	border-width: 1px;
+	max-width: 80%;
+
+	-moz-border-radius: 10px;
+	/* Firefox用 */;	/* Firefox用 */
+}
+
+#sidebar {
+	float:left;
+	width: 184px;
+	min-height: 500px;/*サンプル用に高さ設定してあります。*/
+	background-color: #C8F7C5;
+
+	-webkit-border-radius: 3px;
+
+}
+#footer {
+	margin: 20px 0 0 0;
+}
+#footer footer {
+	margin: 0 auto;
+	height: 120px;/*サンプル用に高さ設定してあります。*/
+}
+#header,
+#contents,
+#footer {
+	max-width: 100%;
+}
+img.thumbnail{
+	max-height: 346px;
+	max-width:246px;
+	box-shadow:0 2px 5px 1px rgba(0, 0, 0, 0.4);
+
+}
+.product-image{
+	float: left;
+	margin: 20px 50px;
+	padding: 20px 20px;
+}
+.product-row{
+	padding: 40px 0px 0px 0px;
+
+}
+
+img#small{
+	max-width: 90px;
+	max-height: 140px;
+	margin-left: 10px;
+}
+.owl-item{
+	max-width: 160px;
+}
+.thumbnail img{
+	width: 100%;
+	height: 160px;
+	box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
+}
+span#row-title{
+	font-size: 30px;	
+}
+span#row-price{
+
+}
+.smallimg img{
+	width: 120px;
+	height: 180px;
+	box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
+	margin: 10px 10px;
+}
+ul#sale_all{
+	margin: 10px;
+}
+img.bigimg {
+    max-width: 221px;
+    max-height: 346px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
+}
+input.btn-success.btn.btn-lg {
+    float: left;
+}
+ul#sale_all {
+	display: inline-table;
+    width: 164px;
+	margin: 10px 25px;
+}
+a.suu{
+	position: absolute;
+    bottom: 50px;
+    right: 30px;
+}
+p.text-right {
+    float: right;
+}
+#sidebar {
+  font: 15px/1.7 "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Meiryo,"メイリオ","ＭＳ Ｐゴシック",Helvetica,Sans-Serif;
+}
+
+/* 親メニュー - Parent nav */
+#sidebar > ul > li {
+  position: relative;
+  z-index: 100;
+}
+#sidebar a {
+  color: #fff;
+  text-decoration: none;
+  text-shadow:1px 1px 3px #000;
+}
+#sidebar ul a:hover {
+  color: #fff;
+}
+
+/* 子メニュー - .sub-menu */
+#sidebar .sub-menu {
+  position: absolute;
+  width: 180px;
+  background: #000;
+  top: 0px;
+  left: 120px;
+  display: none;
+}
+#sidebar .sub-menu a {
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+}
+#sidebar .sub-menu a:hover {
+  color: #fff;
+}
+
+/* ホバー＆フォーカスで子メニュー表示 */
+/* Display sub menu by hover & focus */
+#sidebar .menu-item-has-children:hover ul,
+#sidebar .menu-item-has-children ul.focused {
+  	display: block;
+	position: relative;
+	top: -25px;
+	width: 200px;
+	background: #83CD78;
+}
+#sidebar li.menu-item-has-children li a:hover,
+#sidebar li.menu-item-has-children li a:focus {
+  background: #fff;
+}
+a.white {
+    color: #06740D;
+    text-shadow: 1px 1px 3px #315733;
+}
+
+#welcome{
+	left: 30px;
+}
+
+@media screen and (max-width: 768px){
+	#search_action{
+		margin: 
+	}
+}
